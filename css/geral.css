@@ -7,7 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    text-decoration: none;
+    font-family: var(--fontSource);
 
 }
 
@@ -16,7 +17,153 @@
     --fontSource:'Source Sans 3'
 }
 
+p{
+
+    text-align: center;
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00CAD1;
+    color: white;
+}
+
+header  > img{
+
+    width: 90px;
+}
+
+header a {
+
+    color: white;
+}
+
+header >  nav >  ul  {
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+header ul {
+
+    list-style-type: none;
+}
+
+main :not(.img-fundo){
+
+    max-width: 1000px;
+    margin: 0px auto ;
+    
+    
+}
+main .img-fundo{
+
+    background-image: url(../image/recepcao.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;
+    position: relative;
+    
+       
+}
+
+main .img-fundo > .texto-imgfundo{
+
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+main .img-fundo h1 {
+
+    font-weight: normal;
+   
+    
+}
+
+main .box-sobre{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+main .box-sobre > h3{
+
+    padding: 20px 0px 10px 0px;
+}
+
+main .box-sobre > p {
+
+    padding-bottom: 20px;
+}
+
+main .box-sobre > .container-sobre{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+}
+
+.container-sobre > .lista {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    
+}
+
+main .box-multi{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+main .box-multi > .img-especialidades{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  
+    
+}
+
+main .box-multi > .img-especialidades .container-imgpai img{
+
+    width: 100%;
+}
+
+main .box-multi > .img-especialidades .container-imgpai{
+
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+    border-radius: 8px;
+    overflow: hidden;
+   
+    
+}
+
+main .box-multi > .img-especialidades .container-imgpai > span{
+
+    display: inline-block;
+    padding: 10px;
+}
 
 
-
-
+/* parei em ver horarios */
