@@ -54,13 +54,7 @@ header ul {
     list-style-type: none;
 }
 
-main :not(.img-fundo){
 
-    max-width: 1000px;
-    margin: 0px auto ;
-    
-    
-}
 main .img-fundo{
 
     background-image: url(../image/recepcao.png);
@@ -130,6 +124,15 @@ main .box-multi{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    width: calc(100% - 10px);
+    margin-top: 20px;
+    
+    
+}
+
+main .box-multi p {
+
+    margin-bottom: 20px;
 }
 
 main .box-multi > .img-especialidades{
@@ -139,6 +142,7 @@ main .box-multi > .img-especialidades{
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
   
     
 }
@@ -146,6 +150,7 @@ main .box-multi > .img-especialidades{
 main .box-multi > .img-especialidades .container-imgpai img{
 
     width: 100%;
+    
 }
 
 main .box-multi > .img-especialidades .container-imgpai{
@@ -155,6 +160,7 @@ main .box-multi > .img-especialidades .container-imgpai{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
     border-radius: 8px;
     overflow: hidden;
+    
    
     
 }
@@ -163,7 +169,105 @@ main .box-multi > .img-especialidades .container-imgpai > span{
 
     display: inline-block;
     padding: 10px;
+    
+}
+
+main > .horarios{
+   
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    padding-top: 30px;
+   
+   
+}
+
+main > .horarios a {
+
+    color: black;
+    font-weight: bold;
+    
+}
+ 
+main > .horarios mark{
+
+    background-color: transparent;
+    font-weight: bold;
+}
+    
+main > .horarios >  h3 {
+
+    background-color: #00CAD1;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    font-family: var(--fontSource);
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+   
+main > .localiza {
+
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px 40px 0px;
+}
+
+main > .localiza iframe {
+
+    width: calc(960px - 30px);
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.527);
+    margin: 0px 15px;
+   
+}   
+
+
+footer{
+
+    background-color: #007074;
+    color: white;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-/* parei em ver horarios */
+footer .rodape-pai{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img{
+
+    width: 100px;
+    
+    
+}
+
+footer > .rodape-pai a {
+
+    color: white;
+
+}
+
+
+
+  
+    
+   
