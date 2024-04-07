@@ -10,7 +10,8 @@
     text-decoration: none;
     font-family: var(--fontSource);
     list-style-type: none;
-    color: rgb(116, 116, 116);
+    color: rgba(119, 119, 119, 0.705);
+    
 
 }
 
@@ -155,7 +156,7 @@ table th {
 footer{
 
     background-color: #007074;
-    color: white;
+    color: rgb(255, 255, 255);
     height: 200px;
     display: flex;
     align-items: center;
@@ -178,7 +179,7 @@ footer img{
     
 }
 
-footer > .rodape-pai a {
+footer > .rodape-pai  span , a {
 
     color: white;
 
@@ -186,13 +187,6 @@ footer > .rodape-pai a {
 
 
 
-@media print {
-
-    .box-geral img {
-
-        display: none;
-    }
-}
 
 
 
