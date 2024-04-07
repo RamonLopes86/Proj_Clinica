@@ -152,6 +152,9 @@ main .box-multi{
 main .box-multi p {
 
     margin-bottom: 20px;
+    width: calc(100% - 30px);
+    margin: 0px 15px;
+
 }
 
 main .box-multi > .img-especialidades{
