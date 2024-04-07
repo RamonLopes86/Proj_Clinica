@@ -47,8 +47,8 @@ header  > img{
 
     width: 90px;
     animation-name: mover;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 850ms;
+    animation-iteration-count: infinite;
     
 }
 
@@ -62,12 +62,10 @@ header >  nav >  ul  {
     display: flex;
     flex-direction: row;
     gap: 25px;
-}
-
-header ul {
-
     list-style-type: none;
 }
+
+
 
 main > .navegacao > nav ul {
 
@@ -198,20 +196,47 @@ header > .menu-header > ul > li:hover{
 
     transform: scale(1.1);
     transition-property: all;
+    border-bottom: 2px solid white;
     transition-duration: 400ms;
+    
    
    
 }
 
+header > .menu-header > ul > li:hover{
+
+    border-bottom: 2px solid white;
+    transition-duration: 200ms;
+}
 
 
-main > .navegacao > nav > ul:hover > li:not(:hover){
+
+main > .navegacao > nav > ul:hover > li > a:not(:hover){
 
    opacity: 0.5;
    filter: blur(2px);
    transition-property: all;
-   transition-duration: 800ms;
+   transition-duration: 400ms;
+    
+
+ 
    
+}
+
+main > .navegacao > nav > ul > li a:hover {
+
+    font-weight: 600;
+    transition-duration: 400ms;
+    transition-delay: 100ms;
+}
+
+
+
+
+main > .navegacao > nav > ul > li:hover{
+
+    transform: scale(1.1);
+    transition-duration: 350ms;
 }
 
 
@@ -223,23 +248,18 @@ main > .navegacao > nav > ul:hover > li:not(:hover){
 
     25%{
 
-        transform: translateX(300px);
+        transform: scale(1.1);
         transition-property: all;
-        transition-duration: 2s;
+        transition-duration: 800ms;
     }
-    80%{
-
-        transform: translateX(-180px);
-        transition-property: all;
-        transition-duration: 2s;
-    }
-
     100%{
 
-        transform: translateX(0px);
+        transform: scale(1);
         transition-property: all;
-        transition-duration: 2s;
+        transition-duration: 800ms;
     }
+
+    
 }
 
 

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+
+@media screen and (max-width:624px) {
+
+    main>.box-sobre>.container-sobre>.img-medico img {
+
+
+        display: none;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:360px) {
+
+    main>.box-multi>.img-especialidades>.container-imgpai {
+
+        width: 260px;
+    }
+}
+
+
+@media screen and (max-width:410px) {
+
+    main>.box-sobre {
+
+        font-size: 13px;
+    }
+
+    main>.box-sobre>.container-sobre>.lista>ul {
+
+        position: relative;
+        left: 12px;
+
+    }
+
+    footer {
+
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:590px) {
+
+    header {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header>.menu-header>ul {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 8px 0px;
+        flex-wrap: wrap;
+
+    }
+
+
+    header>.menu-header {
+
+        border-top: 1px solid rgba(128, 128, 128, 0.315);
+        width: calc(100% - 30px);
+        margin: 0px 15px;
+
+
+    }
+
+}
