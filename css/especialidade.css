@@ -46,6 +46,10 @@ header{
 header  > img{
 
     width: 90px;
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    
 }
 
 header a {
@@ -57,7 +61,7 @@ header >  nav >  ul  {
 
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 25px;
 }
 
 header ul {
@@ -69,16 +73,17 @@ main > .navegacao > nav ul {
 
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     padding: 10px 0px;
+    flex-wrap: wrap;
     
 }
 
 main > .navegacao > nav > ul li a {
 
-    border-bottom: 2px solid #00CAD1;
+    border-bottom: 2px solid #00cad1;
     color: black;
 }
 
@@ -101,9 +106,10 @@ main > .especialidades .box-geral{
     margin: 0px 10px;
 }
 
-table{
+table {
 
     border-collapse: collapse;
+   
     
 }
 
@@ -186,7 +192,55 @@ footer > .rodape-pai  span , a {
 }
 
 
+/* houver */
 
+header > .menu-header > ul > li:hover{
+
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 400ms;
+   
+   
+}
+
+
+
+main > .navegacao > nav > ul:hover > li:not(:hover){
+
+   opacity: 0.5;
+   filter: blur(2px);
+   transition-property: all;
+   transition-duration: 800ms;
+   
+}
+
+
+
+/* Animation */
+
+
+@keyframes mover {
+
+    25%{
+
+        transform: translateX(300px);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    80%{
+
+        transform: translateX(-180px);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+    100%{
+
+        transform: translateX(0px);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+}
 
 
 
