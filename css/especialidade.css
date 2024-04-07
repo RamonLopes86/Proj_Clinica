@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fontSource);
+    list-style-type: none;
+    color: rgb(116, 116, 116);
+
+}
+
+h2{
+
+    padding: 20px 0px 30px 0px;
+}
+
+p{
+    max-width: calc(800px - 30px);
+    margin: 0px 15px;
+}
+
+
+
+:root{
+
+    --corpadrao:#04bdc4;
+    --fontSource:'Source Sans 3'
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00CAD1;
+    color: white;
+}
+
+header  > img{
+
+    width: 90px;
+}
+
+header a {
+
+    color: white;
+}
+
+header >  nav >  ul  {
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+header ul {
+
+    list-style-type: none;
+}
+
+main > .navegacao > nav ul {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    
+}
+
+main > .navegacao > nav > ul li a {
+
+    border-bottom: 2px solid #00CAD1;
+    color: black;
+}
+
+main .especialidades{
+
+    
+    max-width:1200px;
+    margin: 0px auto;
+    text-align: center;
+   
+}
+
+main > .especialidades .box-geral{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: calc(100% - 20px);
+    margin: 0px 10px;
+}
+
+table{
+
+    border-collapse: collapse;
+    
+}
+
+table tr:nth-child(odd){
+
+    background-color: rgba(128, 128, 128, 0.26);
+    
+}
+
+table tr:nth-child(even){
+
+    background-color: rgba(248, 246, 246, 0.801);
+}
+
+table   th ,  tr , td{
+
+    width: 220px;
+    height: 40px;
+    text-align: left;
+    padding-left: 3px;
+    
+
+}
+
+table th {
+
+    background-color: var(--corpadrao);
+    color: white;
+    text-align: left;
+}
+
+
+
+.img-table{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    
+    
+}
+
+.img-table img {
+
+    width: 320px;
+    
+}
+
+
+
+footer{
+
+    background-color: #007074;
+    color: white;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer .rodape-pai{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img{
+
+    width: 100px;
+    
+    
+}
+
+footer > .rodape-pai a {
+
+    color: white;
+
+}
+
+
+
+@media print {
+
+    .box-geral img {
+
+        display: none;
+    }
+}
+
+
+
