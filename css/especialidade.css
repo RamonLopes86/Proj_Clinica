@@ -67,6 +67,7 @@ header >  nav >  ul  {
 
 
 
+
 main > .navegacao > nav ul {
 
     display: flex;
@@ -78,11 +79,18 @@ main > .navegacao > nav ul {
     flex-wrap: wrap;
     
 }
+    
+    
 
 main > .navegacao > nav > ul li a {
 
     border-bottom: 2px solid #00cad1;
     color: black;
+    display: inline-block;
+    
+
+    
+    
 }
 
 main .especialidades{
@@ -209,7 +217,12 @@ header > .menu-header > ul > li:hover{
     transition-duration: 200ms;
 }
 
+main > .navegacao > nav > ul{
 
+    max-width: 450px;
+    margin: 0px auto;
+    
+}
 
 main > .navegacao > nav > ul:hover > li > a:not(:hover){
 
@@ -218,10 +231,10 @@ main > .navegacao > nav > ul:hover > li > a:not(:hover){
    transition-property: all;
    transition-duration: 400ms;
     
+}
 
  
    
-}
 
 main > .navegacao > nav > ul > li a:hover {
 

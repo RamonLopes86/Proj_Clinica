@@ -45,6 +45,35 @@
         }
 
 
+        main > .navegacao > nav > ul:hover > li > a:not(:hover){
+
+            opacity: 1;
+            filter: none;
+            font-weight: normal;
+
+
+        }
+
+        header > .menu-header > ul > li:hover{
+
+            transform: scale(1);
+        }
+
+        main > .navegacao > nav > ul > li a:hover{
+
+            font-weight: normal;
+            background-color: rgb(0, 189, 189);
+            color: white;
+            padding: 0px 4px;
+            border-radius: 3px;
+            transition-property: all;
+            transition-duration: 150ms;
+        }
+
+        main > .navegacao > nav > ul > li:hover{
+
+            transform: scale(1);
+        }
 
 }
 
