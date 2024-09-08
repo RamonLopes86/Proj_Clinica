@@ -200,6 +200,24 @@ footer > .rodape-pai  span , a {
 
 /* houver */
 
+
+
+    
+
+header{
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.navegacao{
+
+    padding-top: 45px;
+}
+
+
 header > .menu-header > ul > li:hover{
 
     transform: scale(1.1);

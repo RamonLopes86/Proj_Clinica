@@ -30,6 +30,12 @@ header{
     justify-content: space-around;
     background-color: #00CAD1;
     color: white;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
     
 }
 
